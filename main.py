@@ -34,7 +34,7 @@ if wlan.isconnected():
     print("Successfully initialized a MQTT client")
     
     client.set_callback(handleReceivingMessage)
-    handleSubscribe('Topic', client)
+    handleSubscribe('topic', client)
 
     while True:
        sleep(5)
@@ -45,3 +45,4 @@ if wlan.isconnected():
 if int(userInput) == 0:
     led_onboard.off()
     wlan.disconnect()
+
