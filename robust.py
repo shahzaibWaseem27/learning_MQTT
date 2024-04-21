@@ -1,5 +1,5 @@
 import utime
-from . import simple
+import simple
 
 
 class MQTTClient(simple.MQTTClient):
